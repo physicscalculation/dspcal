@@ -4,9 +4,7 @@ The **D**ifferential **S**cattering **P**arameters **Cal**culator: A small open-
 
 https://youtu.be/iCgpg1YF8MU
 
-[![DSPCal](https://img.youtube.com/vi/iCgpg1YF8MU&ab/0.jpg)](https://www.youtube.com/watch?v=iCgpg1YF8MU&ab)
-
-<iframe width="1280" height="720" src="https://www.youtube.com/embed/iCgpg1YF8MU" title="DSPCal: Differential Scattering Parameters Calculator" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+[![DSPCal](DSPCal/guidata/videoImage.png)](https://www.youtube.com/watch?v=iCgpg1YF8MU&ab)
 
 This work was originally written to support the following paper, submitted to a journal:
 
