@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 #   Author        : Levent Aydinbakar
 
-from main import *
+from DSPCal import *
 from guidata import *
 
 from collections import Counter
