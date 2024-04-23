@@ -1,0 +1,2936 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1301</width>
+    <height>745</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1301</width>
+    <height>713</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">*{
+	border: 0px solid rgb(44, 49, 58);
+}
+
+#line{
+	border: 7px solid rgb(44, 49, 58);
+}</string>
+  </property>
+  <widget class="QWidget" name="stylesheet">
+   <property name="styleSheet">
+    <string notr="true">#main ,#page_main,#page_about{	
+	background-color: rgb(192,192,192);
+}
+
+QLabel {color : #113e68; }
+/* /////////////////////////////////////////////////////////////////////////////////////////////////
+
+/* Top Buttons */
+#toprightbuttons .QPushButton { background-color: rgba(255, 255, 255, 0); border: none;  border-radius: 0px; }
+#toprightbuttons .QPushButton:hover { background-color: rgb(44, 49, 57); border-style: solid; border-radius: 0px; }
+#toprightbuttons .QPushButton:pressed { background-color: rgb(23, 26, 30); border-style: solid; border-radius: 0px; }
+
+
+
+/* MEnu Buttons */
+#menubutton .QPushButton { background-color: rgba(255, 255, 255, 0); border: none;  border-radius: 0px; }
+#menubutton .QPushButton:hover { background-color: rgb(44, 49, 57); border-style: solid; border-radius: 0px; }
+#menubutton .QPushButton:pressed { background-color: rgb(23, 26, 30); border-style: solid; border-radius: 0px; }
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////////
+Left Menu */
+#page_composotion,#page_formula,#page_anangle,#page_multipleangle1,#page_multipleanangel3,#page_multipleanvalue2,#header_frame,#left_menu,#scrollAreaWidgetContents_7{
+	background-color: rgb(192,192,192);border-style: solid; border-color: #113e68; border-radius: 2px;
+}
+#label_3 { font: 63 12pt &quot;Segoe UI Semibold&quot;; }
+#label_3 { font: 9pt &quot;Segoe UI&quot;; color: rgb(80, 177, 200); font-weight: bold;}
+#left_menu {border-width:1px; border-radius:4px;border-style: solid; border-color: #113e68 }
+#main_body {border-width:1px; border-radius:4px ;border-style: solid; border-color: #113e68}
+#footerdesc QLabel { font-size: 11px; color: rgb(113, 126, 149); padding-left: 10px; padding-right: 10px; padding-bottom: 2px; }
+#line {border-width:1px; border-radius:4px ;border-style: solid; border-color: #113e68; background-color: #113e68}
+#line_2 {border-width:1px; border-radius:4px ;border-style: solid; border-color: #113e68; background-color: #113e68}
+#BtnDownload { font: 63 12pt &quot;Segoe UI Semibold&quot;; }
+#BtnDownload { font: 14pt &quot;Segoe UI&quot;; color: #113E68; font-weight: bold; border-style: solid; border-color: #113e68; background-color:rgba(80, 177, 200, 156); border-radius:8px}
+
+
+
+
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////////
+ScrollBars */
+QPushButton:BtnDownload {
+    border: solid;
+    background: rgb(52, 59, 72);
+    color: #113e68;
+    height: 8px;
+    margin: 0px 21px 0 21px;
+	border-radius: 0px;
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////////
+ScrollBars */
+QScrollBar:horizontal {
+    border: none;
+    background: rgb(52, 59, 72);
+    height: 8px;
+    margin: 0px 21px 0 21px;
+	border-radius: 0px;
+}
+QScrollBar::handle:horizontal {
+    background: rgb(80, 177, 200);
+    min-width: 25px;
+	border-radius: 4px
+}
+QScrollBar::add-line:horizontal {
+    border: none;
+    background: rgb(55, 63, 77);
+    width: 20px;
+	border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    subcontrol-position: right;
+    subcontrol-origin: margin;
+}
+QScrollBar::sub-line:horizontal {
+    border: none;
+    background: rgb(55, 63, 77);
+    width: 20px;
+	border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    subcontrol-position: left;
+    subcontrol-origin: margin;
+}
+QScrollBar::up-arrow:horizontal, QScrollBar::down-arrow:horizontal
+{
+     background: none;
+}
+QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal
+{
+     background: none;
+}
+ QScrollBar:vertical {
+	border: none;
+    background: rgb(52, 59, 72);
+    width: 8px;
+    margin: 21px 0 21px 0;
+	border-radius: 0px;
+ }
+ QScrollBar::handle:vertical {	
+	background: rgb(80, 177, 200);
+    min-height: 25px;
+	border-radius: 4px
+ }
+ QScrollBar::add-line:vertical {
+     border: none;
+    background: rgb(55, 63, 77);
+     height: 20px;
+	border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+     subcontrol-position: bottom;
+     subcontrol-origin: margin;
+ }
+ QScrollBar::sub-line:vertical {
+	border: none;
+    background: rgb(55, 63, 77);
+     height: 20px;
+	border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+     subcontrol-position: top;
+     subcontrol-origin: margin;
+ }
+ QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical {
+     background: none;
+ }
+
+ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+     background: none;
+ }
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////////
+QTableWidget */
+QTableWidget {	
+	background-color: transparent;
+	padding: 10px;
+    color: 113e68;
+	border-radius: 5px;
+	gridline-color: #113e68;
+	border-bottom: 1px solid #113e68;
+}
+
+QTableWidget::item{
+	border-color: #113e68;
+    color: #113e68;
+	padding-left: 5px;
+	padding-right: 5px;
+	gridline-color: #113e68;
+}
+
+QTableWidget::item:selected{
+	background-color: rgb(80, 177, 200);
+}
+
+QHeaderView {
+	background-color: transparent;
+}
+QHeaderView::section{
+	background-color: rgb(17, 62, 104);
+	max-width: 30px;
+	border: 1px solid rgb(44, 49, 58);
+	border-style: none;
+    border-bottom: 1px solid rgb(44, 49, 60);
+    border-right: 1px solid rgb(44, 49, 60);
+	color: #fff;
+}
+QTableWidget::horizontalHeader {	
+	background-color: rgb(17, 62, 104);
+}
+
+QTableCornerButton::section {
+    background-color: rgb(17, 62, 104);
+}
+
+QHeaderView::section:horizontal
+{
+    border: 1px solid rgb(33, 37, 43);
+	background-color: rgb(17, 62, 104);
+	padding: 3px;
+	border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+QHeaderView::section:vertical
+{
+    border: 1px solid rgb(44, 49, 60);
+}
+
+
+
+QLineEdit {
+	background-color:rgba(0, 0, 0, 0);
+	border:none;
+	border-bottom:2px solid rgba(80, 177, 200, 200);
+	border-radius: 8px;
+	color:#113e68;
+	padding-bottom:7px;
+}
+
+
+QLineEdit::focus {
+	color:#113e68;
+}
+
+/*//////////////////////COMBOBOX/////////////////////////////////////*/
+
+QComboBox {
+	border: 1px  solid #fff;
+	color: #113e68;
+	background-color : rgba(80, 177, 200, 156);
+	border-radius: 10px;
+	padding-left: 10px;
+	padding-right: 13px;
+}
+
+QComboBox::drop-down {
+	border: 0px;
+}
+
+QComboBox::down-arrow {
+	image: url(:/icons/guidata/cil-arrow-bottom.png);
+	width: 22px;
+	height: 22px;
+	margin-right:15px;
+}
+
+QComboBox:on{
+	border: 4px solid #c2dbfe;
+}
+
+QComboBox QListView {
+	font-size:12px;
+	color : #fff;
+	padding: 5px;
+	border-radius: 0px;
+	background-color : rgba(80, 177, 200, 156);
+	outline: 0px;
+}
+
+
+</string>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QFrame" name="left_menu">
+      <property name="maximumSize">
+       <size>
+        <width>300</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QFrame" name="slide_menu">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_5">
+          <property name="leftMargin">
+           <number>9</number>
+          </property>
+          <item>
+           <widget class="QFrame" name="logoapp">
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_6">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <property name="leftMargin">
+              <number>5</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>8</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="label_3">
+               <property name="font">
+                <font>
+                 <family>Segoe UI</family>
+                 <pointsize>9</pointsize>
+                 <weight>75</weight>
+                 <italic>false</italic>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string notr="true">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt; color:#113e68;&quot;&gt;D&lt;/span&gt;&lt;span style=&quot; font-size:14pt; color:#50b1c8;&quot;&gt;ifferential &lt;/span&gt;&lt;span style=&quot; font-size:14pt; color:#113e68;&quot;&gt;S&lt;/span&gt;&lt;span style=&quot; font-size:14pt; color:#50b1c8;&quot;&gt;cattering&lt;/span&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;&lt;br/&gt;&lt;/span&gt;&lt;span style=&quot; font-size:14pt; color:#113e68;&quot;&gt;P&lt;/span&gt;&lt;span style=&quot; font-size:14pt; color:#50b1c8;&quot;&gt;arameters &lt;/span&gt;&lt;span style=&quot; font-size:14pt; color:#113e68;&quot;&gt;Cal&lt;/span&gt;&lt;span style=&quot; font-size:14pt; color:#50b1c8;&quot;&gt;culator&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               </property>
+               <property name="wordWrap">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QScrollArea" name="scrollArea">
+            <property name="widgetResizable">
+             <bool>true</bool>
+            </property>
+            <widget class="QWidget" name="scrollAreaWidgetContents_7">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>282</width>
+               <height>690</height>
+              </rect>
+             </property>
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="MinimumExpanding">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_21">
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
+              <item alignment="Qt::AlignTop">
+               <widget class="QFrame" name="frame">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>630</height>
+                 </size>
+                </property>
+                <property name="toolTipDuration">
+                 <number>-7</number>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_9">
+                 <property name="spacing">
+                  <number>9</number>
+                 </property>
+                 <property name="leftMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>0</number>
+                 </property>
+                 <item alignment="Qt::AlignTop">
+                  <widget class="QFrame" name="frame_3">
+                   <property name="minimumSize">
+                    <size>
+                     <width>274</width>
+                     <height>306</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>274</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="frameShape">
+                    <enum>QFrame::StyledPanel</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
+                   </property>
+                   <layout class="QVBoxLayout" name="verticalLayout_6">
+                    <property name="spacing">
+                     <number>6</number>
+                    </property>
+                    <property name="leftMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="topMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="rightMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="bottomMargin">
+                     <number>0</number>
+                    </property>
+                    <item>
+                     <widget class="Line" name="line_2">
+                      <property name="orientation">
+                       <enum>Qt::Horizontal</enum>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QLabel" name="label_5">
+                      <property name="palette">
+                       <palette>
+                        <active>
+                         <colorrole role="WindowText">
+                          <brush brushstyle="SolidPattern">
+                           <color alpha="255">
+                            <red>17</red>
+                            <green>62</green>
+                            <blue>104</blue>
+                           </color>
+                          </brush>
+                         </colorrole>
+                         <colorrole role="Text">
+                          <brush brushstyle="SolidPattern">
+                           <color alpha="255">
+                            <red>17</red>
+                            <green>62</green>
+                            <blue>104</blue>
+                           </color>
+                          </brush>
+                         </colorrole>
+                         <colorrole role="ButtonText">
+                          <brush brushstyle="SolidPattern">
+                           <color alpha="255">
+                            <red>17</red>
+                            <green>62</green>
+                            <blue>104</blue>
+                           </color>
+                          </brush>
+                         </colorrole>
+                         <colorrole role="PlaceholderText">
+                          <brush brushstyle="SolidPattern">
+                           <color alpha="255">
+                            <red>17</red>
+                            <green>62</green>
+                            <blue>104</blue>
+                           </color>
+                          </brush>
+                         </colorrole>
+                        </active>
+                        <inactive>
+                         <colorrole role="WindowText">
+                          <brush brushstyle="SolidPattern">
+                           <color alpha="255">
+                            <red>17</red>
+                            <green>62</green>
+                            <blue>104</blue>
+                           </color>
+                          </brush>
+                         </colorrole>
+                         <colorrole role="Text">
+                          <brush brushstyle="SolidPattern">
+                           <color alpha="255">
+                            <red>17</red>
+                            <green>62</green>
+                            <blue>104</blue>
+                           </color>
+                          </brush>
+                         </colorrole>
+                         <colorrole role="ButtonText">
+                          <brush brushstyle="SolidPattern">
+                           <color alpha="255">
+                            <red>17</red>
+                            <green>62</green>
+                            <blue>104</blue>
+                           </color>
+                          </brush>
+                         </colorrole>
+                         <colorrole role="PlaceholderText">
+                          <brush brushstyle="SolidPattern">
+                           <color alpha="255">
+                            <red>17</red>
+                            <green>62</green>
+                            <blue>104</blue>
+                           </color>
+                          </brush>
+                         </colorrole>
+                        </inactive>
+                        <disabled>
+                         <colorrole role="WindowText">
+                          <brush brushstyle="SolidPattern">
+                           <color alpha="255">
+                            <red>17</red>
+                            <green>62</green>
+                            <blue>104</blue>
+                           </color>
+                          </brush>
+                         </colorrole>
+                         <colorrole role="Text">
+                          <brush brushstyle="SolidPattern">
+                           <color alpha="255">
+                            <red>17</red>
+                            <green>62</green>
+                            <blue>104</blue>
+                           </color>
+                          </brush>
+                         </colorrole>
+                         <colorrole role="ButtonText">
+                          <brush brushstyle="SolidPattern">
+                           <color alpha="255">
+                            <red>17</red>
+                            <green>62</green>
+                            <blue>104</blue>
+                           </color>
+                          </brush>
+                         </colorrole>
+                         <colorrole role="PlaceholderText">
+                          <brush brushstyle="SolidPattern">
+                           <color alpha="255">
+                            <red>17</red>
+                            <green>62</green>
+                            <blue>104</blue>
+                           </color>
+                          </brush>
+                         </colorrole>
+                        </disabled>
+                       </palette>
+                      </property>
+                      <property name="font">
+                       <font>
+                        <pointsize>13</pointsize>
+                        <weight>75</weight>
+                        <bold>true</bold>
+                       </font>
+                      </property>
+                      <property name="text">
+                       <string>Chemical formula or composition</string>
+                      </property>
+                      <property name="alignment">
+                       <set>Qt::AlignCenter</set>
+                      </property>
+                     </widget>
+                    </item>
+                    <item alignment="Qt::AlignBottom">
+                     <widget class="QLabel" name="label_6">
+                      <property name="font">
+                       <font>
+                        <pointsize>9</pointsize>
+                       </font>
+                      </property>
+                      <property name="text">
+                       <string>Which one you would like to compute DSP for?</string>
+                      </property>
+                      <property name="alignment">
+                       <set>Qt::AlignCenter</set>
+                      </property>
+                     </widget>
+                    </item>
+                    <item alignment="Qt::AlignVCenter">
+                     <widget class="QComboBox" name="CmbChemical">
+                      <property name="sizePolicy">
+                       <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                        <horstretch>0</horstretch>
+                        <verstretch>0</verstretch>
+                       </sizepolicy>
+                      </property>
+                      <property name="minimumSize">
+                       <size>
+                        <width>0</width>
+                        <height>30</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>16777215</width>
+                        <height>30</height>
+                       </size>
+                      </property>
+                      <property name="palette">
+                       <palette>
+                        <active>
+                         <colorrole role="WindowText">
+                          <brush brushstyle="SolidPattern">
+                           <color alpha="255">
+                            <red>17</red>
+                            <green>62</green>
+                            <blue>104</blue>
+                           </color>
+                          </brush>
+                         </colorrole>
+                         <colorrole role="Button">
+                          <brush brushstyle="SolidPattern">
+                           <color alpha="156">
+                            <red>80</red>
+                            <green>177</green>
+                            <blue>200</blue>
+                           </color>
+                          </brush>
+                         </colorrole>
+                         <colorrole role="Text">
+                          <brush brushstyle="SolidPattern">
+                           <color alpha="255">
+                            <red>17</red>
+                            <green>62</green>
+                            <blue>104</blue>
+                           </color>
+                          </brush>
+                         </colorrole>
+                         <colorrole role="ButtonText">
+                          <brush brushstyle="SolidPattern">
+                           <color alpha="255">
+                            <red>17</red>
+                            <green>62</green>
+                            <blue>104</blue>
+                           </color>
+                          </brush>
+                         </colorrole>
+                         <colorrole role="Base">
+                          <brush brushstyle="SolidPattern">
+                           <color alpha="156">
+                            <red>80</red>
+                            <green>177</green>
+                            <blue>200</blue>
+                           </color>
+                          </brush>
+                         </colorrole>
+                         <colorrole role="Window">
+                          <brush brushstyle="SolidPattern">
+                           <color alpha="156">
+                            <red>80</red>
+                            <green>177</green>
+                            <blue>200</blue>
+                           </color>
+                          </brush>
+                         </colorrole>
+                         <colorrole role="PlaceholderText">
+                          <brush brushstyle="SolidPattern">
+                           <color alpha="255">
+                            <red>17</red>
+                            <green>62</green>
+                            <blue>104</blue>
+                           </color>
+                          </brush>
+                         </colorrole>
+                        </active>
+                        <inactive>
+                         <colorrole role="WindowText">
+                          <brush brushstyle="SolidPattern">
+                           <color alpha="255">
+                            <red>17</red>
+                            <green>62</green>
+                            <blue>104</blue>
+                           </color>
+                          </brush>
+                         </colorrole>
+                         <colorrole role="Button">
+                          <brush brushstyle="SolidPattern">
+                           <color alpha="156">
+                            <red>80</red>
+                            <green>177</green>
+                            <blue>200</blue>
+                           </color>
+                          </brush>
+                         </colorrole>
+                         <colorrole role="Text">
+                          <brush brushstyle="SolidPattern">
+                           <color alpha="255">
+                            <red>17</red>
+                            <green>62</green>
+                            <blue>104</blue>
+                           </color>
+                          </brush>
+                         </colorrole>
+                         <colorrole role="ButtonText">
+                          <brush brushstyle="SolidPattern">
+                           <color alpha="255">
+                            <red>17</red>
+                            <green>62</green>
+                            <blue>104</blue>
+                           </color>
+                          </brush>
+                         </colorrole>
+                         <colorrole role="Base">
+                          <brush brushstyle="SolidPattern">
+                           <color alpha="156">
+                            <red>80</red>
+                            <green>177</green>
+                            <blue>200</blue>
+                           </color>
+                          </brush>
+                         </colorrole>
+                         <colorrole role="Window">
+                          <brush brushstyle="SolidPattern">
+                           <color alpha="156">
+                            <red>80</red>
+                            <green>177</green>
+                            <blue>200</blue>
+                           </color>
+                          </brush>
+                         </colorrole>
+                         <colorrole role="PlaceholderText">
+                          <brush brushstyle="SolidPattern">
+                           <color alpha="255">
+                            <red>17</red>
+                            <green>62</green>
+                            <blue>104</blue>
+                           </color>
+                          </brush>
+                         </colorrole>
+                        </inactive>
+                        <disabled>
+                         <colorrole role="WindowText">
+                          <brush brushstyle="SolidPattern">
+                           <color alpha="255">
+                            <red>17</red>
+                            <green>62</green>
+                            <blue>104</blue>
+                           </color>
+                          </brush>
+                         </colorrole>
+                         <colorrole role="Button">
+                          <brush brushstyle="SolidPattern">
+                           <color alpha="156">
+                            <red>80</red>
+                            <green>177</green>
+                            <blue>200</blue>
+                           </color>
+                          </brush>
+                         </colorrole>
+                         <colorrole role="Text">
+                          <brush brushstyle="SolidPattern">
+                           <color alpha="255">
+                            <red>17</red>
+                            <green>62</green>
+                            <blue>104</blue>
+                           </color>
+                          </brush>
+                         </colorrole>
+                         <colorrole role="ButtonText">
+                          <brush brushstyle="SolidPattern">
+                           <color alpha="255">
+                            <red>17</red>
+                            <green>62</green>
+                            <blue>104</blue>
+                           </color>
+                          </brush>
+                         </colorrole>
+                         <colorrole role="Base">
+                          <brush brushstyle="SolidPattern">
+                           <color alpha="156">
+                            <red>80</red>
+                            <green>177</green>
+                            <blue>200</blue>
+                           </color>
+                          </brush>
+                         </colorrole>
+                         <colorrole role="Window">
+                          <brush brushstyle="SolidPattern">
+                           <color alpha="156">
+                            <red>80</red>
+                            <green>177</green>
+                            <blue>200</blue>
+                           </color>
+                          </brush>
+                         </colorrole>
+                         <colorrole role="PlaceholderText">
+                          <brush brushstyle="SolidPattern">
+                           <color alpha="255">
+                            <red>17</red>
+                            <green>62</green>
+                            <blue>104</blue>
+                           </color>
+                          </brush>
+                         </colorrole>
+                        </disabled>
+                       </palette>
+                      </property>
+                      <property name="contextMenuPolicy">
+                       <enum>Qt::DefaultContextMenu</enum>
+                      </property>
+                      <property name="layoutDirection">
+                       <enum>Qt::LeftToRight</enum>
+                      </property>
+                      <property name="autoFillBackground">
+                       <bool>false</bool>
+                      </property>
+                      <property name="currentText">
+                       <string>A chemical formula</string>
+                      </property>
+                      <property name="insertPolicy">
+                       <enum>QComboBox::InsertAfterCurrent</enum>
+                      </property>
+                      <property name="sizeAdjustPolicy">
+                       <enum>QComboBox::AdjustToContentsOnFirstShow</enum>
+                      </property>
+                      <property name="duplicatesEnabled">
+                       <bool>false</bool>
+                      </property>
+                      <property name="frame">
+                       <bool>true</bool>
+                      </property>
+                      <item>
+                       <property name="text">
+                        <string>A chemical formula</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>A chemical composition</string>
+                       </property>
+                      </item>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QStackedWidget" name="stackedWidget">
+                      <property name="sizePolicy">
+                       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                        <horstretch>0</horstretch>
+                        <verstretch>0</verstretch>
+                       </sizepolicy>
+                      </property>
+                      <property name="minimumSize">
+                       <size>
+                        <width>274</width>
+                        <height>223</height>
+                       </size>
+                      </property>
+                      <property name="lineWidth">
+                       <number>1</number>
+                      </property>
+                      <property name="currentIndex">
+                       <number>0</number>
+                      </property>
+                      <widget class="QWidget" name="page_formula">
+                       <property name="palette">
+                        <palette>
+                         <active>
+                          <colorrole role="Button">
+                           <brush brushstyle="SolidPattern">
+                            <color alpha="255">
+                             <red>192</red>
+                             <green>192</green>
+                             <blue>192</blue>
+                            </color>
+                           </brush>
+                          </colorrole>
+                          <colorrole role="Base">
+                           <brush brushstyle="SolidPattern">
+                            <color alpha="255">
+                             <red>192</red>
+                             <green>192</green>
+                             <blue>192</blue>
+                            </color>
+                           </brush>
+                          </colorrole>
+                          <colorrole role="Window">
+                           <brush brushstyle="SolidPattern">
+                            <color alpha="255">
+                             <red>192</red>
+                             <green>192</green>
+                             <blue>192</blue>
+                            </color>
+                           </brush>
+                          </colorrole>
+                         </active>
+                         <inactive>
+                          <colorrole role="Button">
+                           <brush brushstyle="SolidPattern">
+                            <color alpha="255">
+                             <red>192</red>
+                             <green>192</green>
+                             <blue>192</blue>
+                            </color>
+                           </brush>
+                          </colorrole>
+                          <colorrole role="Base">
+                           <brush brushstyle="SolidPattern">
+                            <color alpha="255">
+                             <red>192</red>
+                             <green>192</green>
+                             <blue>192</blue>
+                            </color>
+                           </brush>
+                          </colorrole>
+                          <colorrole role="Window">
+                           <brush brushstyle="SolidPattern">
+                            <color alpha="255">
+                             <red>192</red>
+                             <green>192</green>
+                             <blue>192</blue>
+                            </color>
+                           </brush>
+                          </colorrole>
+                         </inactive>
+                         <disabled>
+                          <colorrole role="Button">
+                           <brush brushstyle="SolidPattern">
+                            <color alpha="255">
+                             <red>192</red>
+                             <green>192</green>
+                             <blue>192</blue>
+                            </color>
+                           </brush>
+                          </colorrole>
+                          <colorrole role="Base">
+                           <brush brushstyle="SolidPattern">
+                            <color alpha="255">
+                             <red>192</red>
+                             <green>192</green>
+                             <blue>192</blue>
+                            </color>
+                           </brush>
+                          </colorrole>
+                          <colorrole role="Window">
+                           <brush brushstyle="SolidPattern">
+                            <color alpha="255">
+                             <red>192</red>
+                             <green>192</green>
+                             <blue>192</blue>
+                            </color>
+                           </brush>
+                          </colorrole>
+                         </disabled>
+                        </palette>
+                       </property>
+                       <layout class="QVBoxLayout" name="verticalLayout_8">
+                        <item>
+                         <layout class="QGridLayout" name="gridLayout_9">
+                          <property name="topMargin">
+                           <number>0</number>
+                          </property>
+                          <property name="bottomMargin">
+                           <number>145</number>
+                          </property>
+                          <item row="0" column="0" alignment="Qt::AlignVCenter">
+                           <widget class="QLabel" name="label_7">
+                            <property name="sizePolicy">
+                             <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+                              <horstretch>0</horstretch>
+                              <verstretch>0</verstretch>
+                             </sizepolicy>
+                            </property>
+                            <property name="font">
+                             <font>
+                              <pointsize>12</pointsize>
+                             </font>
+                            </property>
+                            <property name="text">
+                             <string>Write the chemical formula.</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="1" column="0">
+                           <widget class="QLineEdit" name="LneChemicalFormula">
+                            <property name="sizePolicy">
+                             <sizepolicy hsizetype="Expanding" vsizetype="Minimum">
+                              <horstretch>0</horstretch>
+                              <verstretch>0</verstretch>
+                             </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                             <size>
+                              <width>0</width>
+                              <height>30</height>
+                             </size>
+                            </property>
+                            <property name="palette">
+                             <palette>
+                              <active>
+                               <colorrole role="WindowText">
+                                <brush brushstyle="SolidPattern">
+                                 <color alpha="255">
+                                  <red>17</red>
+                                  <green>62</green>
+                                  <blue>104</blue>
+                                 </color>
+                                </brush>
+                               </colorrole>
+                               <colorrole role="Button">
+                                <brush brushstyle="SolidPattern">
+                                 <color alpha="0">
+                                  <red>0</red>
+                                  <green>0</green>
+                                  <blue>0</blue>
+                                 </color>
+                                </brush>
+                               </colorrole>
+                               <colorrole role="Text">
+                                <brush brushstyle="SolidPattern">
+                                 <color alpha="255">
+                                  <red>17</red>
+                                  <green>62</green>
+                                  <blue>104</blue>
+                                 </color>
+                                </brush>
+                               </colorrole>
+                               <colorrole role="ButtonText">
+                                <brush brushstyle="SolidPattern">
+                                 <color alpha="255">
+                                  <red>17</red>
+                                  <green>62</green>
+                                  <blue>104</blue>
+                                 </color>
+                                </brush>
+                               </colorrole>
+                               <colorrole role="Base">
+                                <brush brushstyle="SolidPattern">
+                                 <color alpha="0">
+                                  <red>0</red>
+                                  <green>0</green>
+                                  <blue>0</blue>
+                                 </color>
+                                </brush>
+                               </colorrole>
+                               <colorrole role="Window">
+                                <brush brushstyle="SolidPattern">
+                                 <color alpha="0">
+                                  <red>0</red>
+                                  <green>0</green>
+                                  <blue>0</blue>
+                                 </color>
+                                </brush>
+                               </colorrole>
+                               <colorrole role="PlaceholderText">
+                                <brush brushstyle="SolidPattern">
+                                 <color alpha="255">
+                                  <red>17</red>
+                                  <green>62</green>
+                                  <blue>104</blue>
+                                 </color>
+                                </brush>
+                               </colorrole>
+                              </active>
+                              <inactive>
+                               <colorrole role="WindowText">
+                                <brush brushstyle="SolidPattern">
+                                 <color alpha="255">
+                                  <red>17</red>
+                                  <green>62</green>
+                                  <blue>104</blue>
+                                 </color>
+                                </brush>
+                               </colorrole>
+                               <colorrole role="Button">
+                                <brush brushstyle="SolidPattern">
+                                 <color alpha="0">
+                                  <red>0</red>
+                                  <green>0</green>
+                                  <blue>0</blue>
+                                 </color>
+                                </brush>
+                               </colorrole>
+                               <colorrole role="Text">
+                                <brush brushstyle="SolidPattern">
+                                 <color alpha="255">
+                                  <red>17</red>
+                                  <green>62</green>
+                                  <blue>104</blue>
+                                 </color>
+                                </brush>
+                               </colorrole>
+                               <colorrole role="ButtonText">
+                                <brush brushstyle="SolidPattern">
+                                 <color alpha="255">
+                                  <red>17</red>
+                                  <green>62</green>
+                                  <blue>104</blue>
+                                 </color>
+                                </brush>
+                               </colorrole>
+                               <colorrole role="Base">
+                                <brush brushstyle="SolidPattern">
+                                 <color alpha="0">
+                                  <red>0</red>
+                                  <green>0</green>
+                                  <blue>0</blue>
+                                 </color>
+                                </brush>
+                               </colorrole>
+                               <colorrole role="Window">
+                                <brush brushstyle="SolidPattern">
+                                 <color alpha="0">
+                                  <red>0</red>
+                                  <green>0</green>
+                                  <blue>0</blue>
+                                 </color>
+                                </brush>
+                               </colorrole>
+                               <colorrole role="PlaceholderText">
+                                <brush brushstyle="SolidPattern">
+                                 <color alpha="255">
+                                  <red>17</red>
+                                  <green>62</green>
+                                  <blue>104</blue>
+                                 </color>
+                                </brush>
+                               </colorrole>
+                              </inactive>
+                              <disabled>
+                               <colorrole role="WindowText">
+                                <brush brushstyle="SolidPattern">
+                                 <color alpha="255">
+                                  <red>17</red>
+                                  <green>62</green>
+                                  <blue>104</blue>
+                                 </color>
+                                </brush>
+                               </colorrole>
+                               <colorrole role="Button">
+                                <brush brushstyle="SolidPattern">
+                                 <color alpha="0">
+                                  <red>0</red>
+                                  <green>0</green>
+                                  <blue>0</blue>
+                                 </color>
+                                </brush>
+                               </colorrole>
+                               <colorrole role="Text">
+                                <brush brushstyle="SolidPattern">
+                                 <color alpha="255">
+                                  <red>17</red>
+                                  <green>62</green>
+                                  <blue>104</blue>
+                                 </color>
+                                </brush>
+                               </colorrole>
+                               <colorrole role="ButtonText">
+                                <brush brushstyle="SolidPattern">
+                                 <color alpha="255">
+                                  <red>17</red>
+                                  <green>62</green>
+                                  <blue>104</blue>
+                                 </color>
+                                </brush>
+                               </colorrole>
+                               <colorrole role="Base">
+                                <brush brushstyle="SolidPattern">
+                                 <color alpha="0">
+                                  <red>0</red>
+                                  <green>0</green>
+                                  <blue>0</blue>
+                                 </color>
+                                </brush>
+                               </colorrole>
+                               <colorrole role="Window">
+                                <brush brushstyle="SolidPattern">
+                                 <color alpha="0">
+                                  <red>0</red>
+                                  <green>0</green>
+                                  <blue>0</blue>
+                                 </color>
+                                </brush>
+                               </colorrole>
+                               <colorrole role="PlaceholderText">
+                                <brush brushstyle="SolidPattern">
+                                 <color alpha="255">
+                                  <red>17</red>
+                                  <green>62</green>
+                                  <blue>104</blue>
+                                 </color>
+                                </brush>
+                               </colorrole>
+                              </disabled>
+                             </palette>
+                            </property>
+                            <property name="styleSheet">
+                             <string notr="true"/>
+                            </property>
+                            <property name="text">
+                             <string>H2O</string>
+                            </property>
+                            <property name="placeholderText">
+                             <string/>
+                            </property>
+                           </widget>
+                          </item>
+                         </layout>
+                        </item>
+                       </layout>
+                      </widget>
+                      <widget class="QWidget" name="page_composotion">
+                       <layout class="QVBoxLayout" name="verticalLayout_10">
+                        <item alignment="Qt::AlignTop">
+                         <widget class="QFrame" name="frame_6">
+                          <property name="frameShape">
+                           <enum>QFrame::StyledPanel</enum>
+                          </property>
+                          <property name="frameShadow">
+                           <enum>QFrame::Raised</enum>
+                          </property>
+                          <layout class="QVBoxLayout" name="verticalLayout_11">
+                           <property name="leftMargin">
+                            <number>0</number>
+                           </property>
+                           <property name="topMargin">
+                            <number>0</number>
+                           </property>
+                           <property name="rightMargin">
+                            <number>0</number>
+                           </property>
+                           <property name="bottomMargin">
+                            <number>0</number>
+                           </property>
+                           <item alignment="Qt::AlignTop">
+                            <widget class="QLabel" name="label_8">
+                             <property name="sizePolicy">
+                              <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+                               <horstretch>0</horstretch>
+                               <verstretch>0</verstretch>
+                              </sizepolicy>
+                             </property>
+                             <property name="font">
+                              <font>
+                               <pointsize>9</pointsize>
+                              </font>
+                             </property>
+                             <property name="text">
+                              <string>The elements in the composition(e.g. HO, FeO, CHNOS.)</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item alignment="Qt::AlignTop">
+                            <widget class="QLineEdit" name="LneElements1">
+                             <property name="sizePolicy">
+                              <sizepolicy hsizetype="Expanding" vsizetype="Minimum">
+                               <horstretch>0</horstretch>
+                               <verstretch>0</verstretch>
+                              </sizepolicy>
+                             </property>
+                             <property name="minimumSize">
+                              <size>
+                               <width>0</width>
+                               <height>30</height>
+                              </size>
+                             </property>
+                             <property name="text">
+                              <string>HO</string>
+                             </property>
+                             <property name="placeholderText">
+                              <string/>
+                             </property>
+                            </widget>
+                           </item>
+                          </layout>
+                         </widget>
+                        </item>
+                       </layout>
+                      </widget>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="Line" name="line">
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                  </widget>
+                 </item>
+                 <item alignment="Qt::AlignTop">
+                  <widget class="QFrame" name="frame_4">
+                   <property name="minimumSize">
+                    <size>
+                     <width>274</width>
+                     <height>305</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>274</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="frameShape">
+                    <enum>QFrame::StyledPanel</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
+                   </property>
+                   <layout class="QVBoxLayout" name="verticalLayout_7">
+                    <property name="leftMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="topMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="rightMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="bottomMargin">
+                     <number>0</number>
+                    </property>
+                    <item>
+                     <widget class="QLabel" name="label_12">
+                      <property name="font">
+                       <font>
+                        <pointsize>13</pointsize>
+                        <weight>75</weight>
+                        <bold>true</bold>
+                       </font>
+                      </property>
+                      <property name="text">
+                       <string>Energy and angle</string>
+                      </property>
+                      <property name="alignment">
+                       <set>Qt::AlignCenter</set>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QLabel" name="label_11">
+                      <property name="font">
+                       <font>
+                        <pointsize>9</pointsize>
+                       </font>
+                      </property>
+                      <property name="text">
+                       <string>Whic one you would like to use?</string>
+                      </property>
+                      <property name="alignment">
+                       <set>Qt::AlignCenter</set>
+                      </property>
+                     </widget>
+                    </item>
+                    <item alignment="Qt::AlignVCenter">
+                     <widget class="QComboBox" name="CmbEnergy">
+                      <property name="minimumSize">
+                       <size>
+                        <width>0</width>
+                        <height>30</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>16777215</width>
+                        <height>30</height>
+                       </size>
+                      </property>
+                      <item>
+                       <property name="text">
+                        <string>An energy value and an angle value</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>An energy value and multiple angle values</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Multiple energy values and an angle value</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Multiple energy values and multiple angle values</string>
+                       </property>
+                      </item>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QStackedWidget" name="stackedWidget_2">
+                      <property name="maximumSize">
+                       <size>
+                        <width>282</width>
+                        <height>274</height>
+                       </size>
+                      </property>
+                      <property name="currentIndex">
+                       <number>0</number>
+                      </property>
+                      <widget class="QWidget" name="page_anangle">
+                       <layout class="QVBoxLayout" name="verticalLayout_12">
+                        <item>
+                         <layout class="QGridLayout" name="gridLayout_8">
+                          <property name="bottomMargin">
+                           <number>30</number>
+                          </property>
+                          <item row="2" column="0">
+                           <widget class="QLineEdit" name="LneAngle">
+                            <property name="sizePolicy">
+                             <sizepolicy hsizetype="Expanding" vsizetype="Minimum">
+                              <horstretch>0</horstretch>
+                              <verstretch>0</verstretch>
+                             </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                             <size>
+                              <width>0</width>
+                              <height>30</height>
+                             </size>
+                            </property>
+                            <property name="maximumSize">
+                             <size>
+                              <width>16777215</width>
+                              <height>30</height>
+                             </size>
+                            </property>
+                            <property name="text">
+                             <string>45.0</string>
+                            </property>
+                            <property name="placeholderText">
+                             <string>Angle</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="1" column="0" alignment="Qt::AlignVCenter">
+                           <widget class="QLabel" name="label_14">
+                            <property name="sizePolicy">
+                             <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+                              <horstretch>0</horstretch>
+                              <verstretch>0</verstretch>
+                             </sizepolicy>
+                            </property>
+                            <property name="font">
+                             <font>
+                              <pointsize>9</pointsize>
+                             </font>
+                            </property>
+                            <property name="text">
+                             <string>Angle</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="0" column="0">
+                           <layout class="QGridLayout" name="gridLayout_7">
+                            <property name="bottomMargin">
+                             <number>30</number>
+                            </property>
+                            <item row="0" column="0" alignment="Qt::AlignVCenter">
+                             <widget class="QLabel" name="label_13">
+                              <property name="sizePolicy">
+                               <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+                                <horstretch>0</horstretch>
+                                <verstretch>0</verstretch>
+                               </sizepolicy>
+                              </property>
+                              <property name="font">
+                               <font>
+                                <pointsize>12</pointsize>
+                               </font>
+                              </property>
+                              <property name="text">
+                               <string>Energy (keV)</string>
+                              </property>
+                             </widget>
+                            </item>
+                            <item row="1" column="0">
+                             <widget class="QLineEdit" name="LneEnergy">
+                              <property name="sizePolicy">
+                               <sizepolicy hsizetype="Expanding" vsizetype="Minimum">
+                                <horstretch>0</horstretch>
+                                <verstretch>0</verstretch>
+                               </sizepolicy>
+                              </property>
+                              <property name="minimumSize">
+                               <size>
+                                <width>0</width>
+                                <height>30</height>
+                               </size>
+                              </property>
+                              <property name="maximumSize">
+                               <size>
+                                <width>16777215</width>
+                                <height>30</height>
+                               </size>
+                              </property>
+                              <property name="text">
+                               <string>500.0</string>
+                              </property>
+                              <property name="placeholderText">
+                               <string>Energy (keV)</string>
+                              </property>
+                             </widget>
+                            </item>
+                           </layout>
+                          </item>
+                         </layout>
+                        </item>
+                       </layout>
+                      </widget>
+                      <widget class="QWidget" name="page_multipleangle1">
+                       <layout class="QVBoxLayout" name="verticalLayout_19">
+                        <item>
+                         <layout class="QGridLayout" name="gridLayout_4">
+                          <property name="bottomMargin">
+                           <number>30</number>
+                          </property>
+                          <item row="1" column="0">
+                           <widget class="QLineEdit" name="LneEnergy1">
+                            <property name="sizePolicy">
+                             <sizepolicy hsizetype="Expanding" vsizetype="Minimum">
+                              <horstretch>0</horstretch>
+                              <verstretch>0</verstretch>
+                             </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                             <size>
+                              <width>0</width>
+                              <height>30</height>
+                             </size>
+                            </property>
+                            <property name="maximumSize">
+                             <size>
+                              <width>16777215</width>
+                              <height>30</height>
+                             </size>
+                            </property>
+                            <property name="text">
+                             <string>500.0</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="0" column="0" alignment="Qt::AlignVCenter">
+                           <widget class="QLabel" name="label_19">
+                            <property name="sizePolicy">
+                             <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+                              <horstretch>0</horstretch>
+                              <verstretch>0</verstretch>
+                             </sizepolicy>
+                            </property>
+                            <property name="font">
+                             <font>
+                              <pointsize>9</pointsize>
+                             </font>
+                            </property>
+                            <property name="text">
+                             <string>Energy (keV)</string>
+                            </property>
+                           </widget>
+                          </item>
+                         </layout>
+                        </item>
+                        <item>
+                         <layout class="QGridLayout" name="gridLayout_3">
+                          <property name="bottomMargin">
+                           <number>30</number>
+                          </property>
+                          <item row="0" column="0" alignment="Qt::AlignVCenter">
+                           <widget class="QLabel" name="label_16">
+                            <property name="sizePolicy">
+                             <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+                              <horstretch>0</horstretch>
+                              <verstretch>0</verstretch>
+                             </sizepolicy>
+                            </property>
+                            <property name="font">
+                             <font>
+                              <pointsize>9</pointsize>
+                             </font>
+                            </property>
+                            <property name="text">
+                             <string>Angle from</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="0" column="1" alignment="Qt::AlignVCenter">
+                           <widget class="QLabel" name="label_17">
+                            <property name="sizePolicy">
+                             <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+                              <horstretch>0</horstretch>
+                              <verstretch>0</verstretch>
+                             </sizepolicy>
+                            </property>
+                            <property name="font">
+                             <font>
+                              <pointsize>9</pointsize>
+                             </font>
+                            </property>
+                            <property name="text">
+                             <string>Angle to</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="0" column="2" alignment="Qt::AlignVCenter">
+                           <widget class="QLabel" name="label_18">
+                            <property name="sizePolicy">
+                             <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+                              <horstretch>0</horstretch>
+                              <verstretch>0</verstretch>
+                             </sizepolicy>
+                            </property>
+                            <property name="font">
+                             <font>
+                              <pointsize>9</pointsize>
+                             </font>
+                            </property>
+                            <property name="text">
+                             <string>Angle skip</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="1" column="0">
+                           <widget class="QLineEdit" name="LneAngleFrom1">
+                            <property name="sizePolicy">
+                             <sizepolicy hsizetype="Expanding" vsizetype="Minimum">
+                              <horstretch>0</horstretch>
+                              <verstretch>0</verstretch>
+                             </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                             <size>
+                              <width>0</width>
+                              <height>30</height>
+                             </size>
+                            </property>
+                            <property name="maximumSize">
+                             <size>
+                              <width>16777215</width>
+                              <height>30</height>
+                             </size>
+                            </property>
+                            <property name="text">
+                             <string>45.0</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="1" column="1">
+                           <widget class="QLineEdit" name="LneAngleTo1">
+                            <property name="sizePolicy">
+                             <sizepolicy hsizetype="Expanding" vsizetype="Minimum">
+                              <horstretch>0</horstretch>
+                              <verstretch>0</verstretch>
+                             </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                             <size>
+                              <width>0</width>
+                              <height>30</height>
+                             </size>
+                            </property>
+                            <property name="maximumSize">
+                             <size>
+                              <width>16777215</width>
+                              <height>30</height>
+                             </size>
+                            </property>
+                            <property name="text">
+                             <string>90.0</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="1" column="2">
+                           <widget class="QLineEdit" name="LneAngleSkip1">
+                            <property name="sizePolicy">
+                             <sizepolicy hsizetype="Expanding" vsizetype="Minimum">
+                              <horstretch>0</horstretch>
+                              <verstretch>0</verstretch>
+                             </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                             <size>
+                              <width>0</width>
+                              <height>30</height>
+                             </size>
+                            </property>
+                            <property name="maximumSize">
+                             <size>
+                              <width>16777215</width>
+                              <height>30</height>
+                             </size>
+                            </property>
+                            <property name="text">
+                             <string>5.0</string>
+                            </property>
+                           </widget>
+                          </item>
+                         </layout>
+                        </item>
+                       </layout>
+                      </widget>
+                      <widget class="QWidget" name="page_multipleanvalue2">
+                       <layout class="QVBoxLayout" name="verticalLayout_20">
+                        <item>
+                         <layout class="QGridLayout" name="gridLayout_5">
+                          <property name="bottomMargin">
+                           <number>30</number>
+                          </property>
+                          <item row="0" column="0" alignment="Qt::AlignVCenter">
+                           <widget class="QLabel" name="label_20">
+                            <property name="sizePolicy">
+                             <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+                              <horstretch>0</horstretch>
+                              <verstretch>0</verstretch>
+                             </sizepolicy>
+                            </property>
+                            <property name="font">
+                             <font>
+                              <pointsize>9</pointsize>
+                             </font>
+                            </property>
+                            <property name="text">
+                             <string>Energy from
+ (keV)</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="1" column="0">
+                           <widget class="QLineEdit" name="LneEnergyFrom2">
+                            <property name="sizePolicy">
+                             <sizepolicy hsizetype="Expanding" vsizetype="Minimum">
+                              <horstretch>0</horstretch>
+                              <verstretch>0</verstretch>
+                             </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                             <size>
+                              <width>0</width>
+                              <height>30</height>
+                             </size>
+                            </property>
+                            <property name="maximumSize">
+                             <size>
+                              <width>16777215</width>
+                              <height>30</height>
+                             </size>
+                            </property>
+                            <property name="text">
+                             <string>100.0</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="1" column="1">
+                           <widget class="QLineEdit" name="LneEnergyTo2">
+                            <property name="sizePolicy">
+                             <sizepolicy hsizetype="Expanding" vsizetype="Minimum">
+                              <horstretch>0</horstretch>
+                              <verstretch>0</verstretch>
+                             </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                             <size>
+                              <width>0</width>
+                              <height>30</height>
+                             </size>
+                            </property>
+                            <property name="maximumSize">
+                             <size>
+                              <width>16777215</width>
+                              <height>30</height>
+                             </size>
+                            </property>
+                            <property name="text">
+                             <string>500.0</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="1" column="2">
+                           <widget class="QLineEdit" name="LneEnergySkip2">
+                            <property name="sizePolicy">
+                             <sizepolicy hsizetype="Expanding" vsizetype="Minimum">
+                              <horstretch>0</horstretch>
+                              <verstretch>0</verstretch>
+                             </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                             <size>
+                              <width>0</width>
+                              <height>30</height>
+                             </size>
+                            </property>
+                            <property name="maximumSize">
+                             <size>
+                              <width>16777215</width>
+                              <height>30</height>
+                             </size>
+                            </property>
+                            <property name="text">
+                             <string>50.0</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="0" column="1" alignment="Qt::AlignVCenter">
+                           <widget class="QLabel" name="label_21">
+                            <property name="sizePolicy">
+                             <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+                              <horstretch>0</horstretch>
+                              <verstretch>0</verstretch>
+                             </sizepolicy>
+                            </property>
+                            <property name="font">
+                             <font>
+                              <pointsize>9</pointsize>
+                             </font>
+                            </property>
+                            <property name="text">
+                             <string>Energy to (keV)</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="0" column="2" alignment="Qt::AlignVCenter">
+                           <widget class="QLabel" name="label_32">
+                            <property name="sizePolicy">
+                             <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+                              <horstretch>0</horstretch>
+                              <verstretch>0</verstretch>
+                             </sizepolicy>
+                            </property>
+                            <property name="font">
+                             <font>
+                              <pointsize>9</pointsize>
+                             </font>
+                            </property>
+                            <property name="text">
+                             <string>Energy skip</string>
+                            </property>
+                           </widget>
+                          </item>
+                         </layout>
+                        </item>
+                        <item>
+                         <layout class="QGridLayout" name="gridLayout_6">
+                          <property name="bottomMargin">
+                           <number>30</number>
+                          </property>
+                          <item row="0" column="0" alignment="Qt::AlignVCenter">
+                           <widget class="QLabel" name="label_22">
+                            <property name="sizePolicy">
+                             <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+                              <horstretch>0</horstretch>
+                              <verstretch>0</verstretch>
+                             </sizepolicy>
+                            </property>
+                            <property name="font">
+                             <font>
+                              <pointsize>9</pointsize>
+                             </font>
+                            </property>
+                            <property name="text">
+                             <string>Angle</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="1" column="0">
+                           <widget class="QLineEdit" name="LneAngle2">
+                            <property name="sizePolicy">
+                             <sizepolicy hsizetype="Expanding" vsizetype="Minimum">
+                              <horstretch>0</horstretch>
+                              <verstretch>0</verstretch>
+                             </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                             <size>
+                              <width>0</width>
+                              <height>30</height>
+                             </size>
+                            </property>
+                            <property name="maximumSize">
+                             <size>
+                              <width>16777215</width>
+                              <height>30</height>
+                             </size>
+                            </property>
+                            <property name="text">
+                             <string>45.0</string>
+                            </property>
+                           </widget>
+                          </item>
+                         </layout>
+                        </item>
+                       </layout>
+                      </widget>
+                      <widget class="QWidget" name="page_multipleanangel3">
+                       <layout class="QVBoxLayout" name="verticalLayout_14">
+                        <item>
+                         <layout class="QGridLayout" name="gridLayout_2">
+                          <property name="sizeConstraint">
+                           <enum>QLayout::SetDefaultConstraint</enum>
+                          </property>
+                          <property name="bottomMargin">
+                           <number>30</number>
+                          </property>
+                          <property name="verticalSpacing">
+                           <number>6</number>
+                          </property>
+                          <item row="0" column="0" alignment="Qt::AlignVCenter">
+                           <widget class="QLabel" name="label_23">
+                            <property name="sizePolicy">
+                             <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+                              <horstretch>0</horstretch>
+                              <verstretch>0</verstretch>
+                             </sizepolicy>
+                            </property>
+                            <property name="font">
+                             <font>
+                              <pointsize>9</pointsize>
+                             </font>
+                            </property>
+                            <property name="text">
+                             <string>Energy from
+ (keV)</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="1" column="2">
+                           <widget class="QLineEdit" name="LneEnergySkip3">
+                            <property name="sizePolicy">
+                             <sizepolicy hsizetype="Expanding" vsizetype="Minimum">
+                              <horstretch>0</horstretch>
+                              <verstretch>0</verstretch>
+                             </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                             <size>
+                              <width>0</width>
+                              <height>30</height>
+                             </size>
+                            </property>
+                            <property name="maximumSize">
+                             <size>
+                              <width>16777215</width>
+                              <height>30</height>
+                             </size>
+                            </property>
+                            <property name="text">
+                             <string>50.0</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="1" column="1">
+                           <widget class="QLineEdit" name="LneEnergyTo3">
+                            <property name="sizePolicy">
+                             <sizepolicy hsizetype="Expanding" vsizetype="Minimum">
+                              <horstretch>0</horstretch>
+                              <verstretch>0</verstretch>
+                             </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                             <size>
+                              <width>0</width>
+                              <height>30</height>
+                             </size>
+                            </property>
+                            <property name="maximumSize">
+                             <size>
+                              <width>16777215</width>
+                              <height>30</height>
+                             </size>
+                            </property>
+                            <property name="text">
+                             <string>500.0</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="0" column="2" alignment="Qt::AlignVCenter">
+                           <widget class="QLabel" name="label_25">
+                            <property name="sizePolicy">
+                             <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+                              <horstretch>0</horstretch>
+                              <verstretch>0</verstretch>
+                             </sizepolicy>
+                            </property>
+                            <property name="font">
+                             <font>
+                              <pointsize>9</pointsize>
+                             </font>
+                            </property>
+                            <property name="text">
+                             <string>Energy skip</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="1" column="0">
+                           <widget class="QLineEdit" name="LneEnergyFrom3">
+                            <property name="sizePolicy">
+                             <sizepolicy hsizetype="Expanding" vsizetype="Minimum">
+                              <horstretch>0</horstretch>
+                              <verstretch>0</verstretch>
+                             </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                             <size>
+                              <width>0</width>
+                              <height>30</height>
+                             </size>
+                            </property>
+                            <property name="maximumSize">
+                             <size>
+                              <width>16777215</width>
+                              <height>30</height>
+                             </size>
+                            </property>
+                            <property name="text">
+                             <string>100.0</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="0" column="1" alignment="Qt::AlignVCenter">
+                           <widget class="QLabel" name="label_24">
+                            <property name="sizePolicy">
+                             <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+                              <horstretch>0</horstretch>
+                              <verstretch>0</verstretch>
+                             </sizepolicy>
+                            </property>
+                            <property name="font">
+                             <font>
+                              <pointsize>9</pointsize>
+                             </font>
+                            </property>
+                            <property name="text">
+                             <string>Energy to (keV)</string>
+                            </property>
+                           </widget>
+                          </item>
+                         </layout>
+                        </item>
+                        <item>
+                         <layout class="QGridLayout" name="gridLayout">
+                          <property name="bottomMargin">
+                           <number>30</number>
+                          </property>
+                          <property name="verticalSpacing">
+                           <number>6</number>
+                          </property>
+                          <item row="0" column="0" alignment="Qt::AlignVCenter">
+                           <widget class="QLabel" name="label_26">
+                            <property name="sizePolicy">
+                             <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+                              <horstretch>0</horstretch>
+                              <verstretch>0</verstretch>
+                             </sizepolicy>
+                            </property>
+                            <property name="font">
+                             <font>
+                              <pointsize>9</pointsize>
+                             </font>
+                            </property>
+                            <property name="text">
+                             <string>Angle from</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="0" column="1" alignment="Qt::AlignVCenter">
+                           <widget class="QLabel" name="label_28">
+                            <property name="sizePolicy">
+                             <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+                              <horstretch>0</horstretch>
+                              <verstretch>0</verstretch>
+                             </sizepolicy>
+                            </property>
+                            <property name="font">
+                             <font>
+                              <pointsize>9</pointsize>
+                             </font>
+                            </property>
+                            <property name="text">
+                             <string>Angle to</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="0" column="2" alignment="Qt::AlignVCenter">
+                           <widget class="QLabel" name="label_27">
+                            <property name="sizePolicy">
+                             <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+                              <horstretch>0</horstretch>
+                              <verstretch>0</verstretch>
+                             </sizepolicy>
+                            </property>
+                            <property name="font">
+                             <font>
+                              <pointsize>9</pointsize>
+                             </font>
+                            </property>
+                            <property name="text">
+                             <string>Angle skip</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="1" column="0">
+                           <widget class="QLineEdit" name="LneAngleFrom3">
+                            <property name="sizePolicy">
+                             <sizepolicy hsizetype="Expanding" vsizetype="Minimum">
+                              <horstretch>0</horstretch>
+                              <verstretch>0</verstretch>
+                             </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                             <size>
+                              <width>0</width>
+                              <height>30</height>
+                             </size>
+                            </property>
+                            <property name="maximumSize">
+                             <size>
+                              <width>16777215</width>
+                              <height>30</height>
+                             </size>
+                            </property>
+                            <property name="text">
+                             <string>45.0</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="1" column="1">
+                           <widget class="QLineEdit" name="LneAngleTo3">
+                            <property name="sizePolicy">
+                             <sizepolicy hsizetype="Expanding" vsizetype="Minimum">
+                              <horstretch>0</horstretch>
+                              <verstretch>0</verstretch>
+                             </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                             <size>
+                              <width>0</width>
+                              <height>30</height>
+                             </size>
+                            </property>
+                            <property name="maximumSize">
+                             <size>
+                              <width>16777215</width>
+                              <height>30</height>
+                             </size>
+                            </property>
+                            <property name="text">
+                             <string>90.0</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="1" column="2">
+                           <widget class="QLineEdit" name="LneAngleSkip3">
+                            <property name="sizePolicy">
+                             <sizepolicy hsizetype="Expanding" vsizetype="Minimum">
+                              <horstretch>0</horstretch>
+                              <verstretch>0</verstretch>
+                             </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                             <size>
+                              <width>0</width>
+                              <height>30</height>
+                             </size>
+                            </property>
+                            <property name="maximumSize">
+                             <size>
+                              <width>16777215</width>
+                              <height>30</height>
+                             </size>
+                            </property>
+                            <property name="text">
+                             <string>5.0</string>
+                            </property>
+                           </widget>
+                          </item>
+                         </layout>
+                        </item>
+                       </layout>
+                      </widget>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QFrame" name="main">
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item alignment="Qt::AlignTop">
+        <widget class="QFrame" name="header_frame">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item alignment="Qt::AlignLeft|Qt::AlignTop">
+           <widget class="QFrame" name="menubutton">
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_5">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+            </layout>
+           </widget>
+          </item>
+          <item alignment="Qt::AlignRight|Qt::AlignTop">
+           <widget class="QFrame" name="toprightbuttons">
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_4">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="main_body">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_13">
+          <item>
+           <widget class="QStackedWidget" name="stackedWidget_3">
+            <widget class="QWidget" name="page_main">
+             <layout class="QVBoxLayout" name="verticalLayout_15">
+              <item>
+               <widget class="QFrame" name="frame_7">
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_16">
+                 <item>
+                  <widget class="QLabel" name="label_29">
+                   <property name="palette">
+                    <palette>
+                     <active>
+                      <colorrole role="WindowText">
+                       <brush brushstyle="SolidPattern">
+                        <color alpha="255">
+                         <red>17</red>
+                         <green>62</green>
+                         <blue>104</blue>
+                        </color>
+                       </brush>
+                      </colorrole>
+                      <colorrole role="Text">
+                       <brush brushstyle="SolidPattern">
+                        <color alpha="255">
+                         <red>17</red>
+                         <green>62</green>
+                         <blue>104</blue>
+                        </color>
+                       </brush>
+                      </colorrole>
+                      <colorrole role="BrightText">
+                       <brush brushstyle="SolidPattern">
+                        <color alpha="255">
+                         <red>17</red>
+                         <green>62</green>
+                         <blue>104</blue>
+                        </color>
+                       </brush>
+                      </colorrole>
+                      <colorrole role="ButtonText">
+                       <brush brushstyle="SolidPattern">
+                        <color alpha="255">
+                         <red>17</red>
+                         <green>62</green>
+                         <blue>104</blue>
+                        </color>
+                       </brush>
+                      </colorrole>
+                      <colorrole role="PlaceholderText">
+                       <brush brushstyle="SolidPattern">
+                        <color alpha="255">
+                         <red>17</red>
+                         <green>62</green>
+                         <blue>104</blue>
+                        </color>
+                       </brush>
+                      </colorrole>
+                     </active>
+                     <inactive>
+                      <colorrole role="WindowText">
+                       <brush brushstyle="SolidPattern">
+                        <color alpha="255">
+                         <red>17</red>
+                         <green>62</green>
+                         <blue>104</blue>
+                        </color>
+                       </brush>
+                      </colorrole>
+                      <colorrole role="Text">
+                       <brush brushstyle="SolidPattern">
+                        <color alpha="255">
+                         <red>17</red>
+                         <green>62</green>
+                         <blue>104</blue>
+                        </color>
+                       </brush>
+                      </colorrole>
+                      <colorrole role="BrightText">
+                       <brush brushstyle="SolidPattern">
+                        <color alpha="255">
+                         <red>17</red>
+                         <green>62</green>
+                         <blue>104</blue>
+                        </color>
+                       </brush>
+                      </colorrole>
+                      <colorrole role="ButtonText">
+                       <brush brushstyle="SolidPattern">
+                        <color alpha="255">
+                         <red>17</red>
+                         <green>62</green>
+                         <blue>104</blue>
+                        </color>
+                       </brush>
+                      </colorrole>
+                      <colorrole role="PlaceholderText">
+                       <brush brushstyle="SolidPattern">
+                        <color alpha="255">
+                         <red>17</red>
+                         <green>62</green>
+                         <blue>104</blue>
+                        </color>
+                       </brush>
+                      </colorrole>
+                     </inactive>
+                     <disabled>
+                      <colorrole role="WindowText">
+                       <brush brushstyle="SolidPattern">
+                        <color alpha="255">
+                         <red>17</red>
+                         <green>62</green>
+                         <blue>104</blue>
+                        </color>
+                       </brush>
+                      </colorrole>
+                      <colorrole role="Text">
+                       <brush brushstyle="SolidPattern">
+                        <color alpha="255">
+                         <red>17</red>
+                         <green>62</green>
+                         <blue>104</blue>
+                        </color>
+                       </brush>
+                      </colorrole>
+                      <colorrole role="BrightText">
+                       <brush brushstyle="SolidPattern">
+                        <color alpha="255">
+                         <red>17</red>
+                         <green>62</green>
+                         <blue>104</blue>
+                        </color>
+                       </brush>
+                      </colorrole>
+                      <colorrole role="ButtonText">
+                       <brush brushstyle="SolidPattern">
+                        <color alpha="255">
+                         <red>17</red>
+                         <green>62</green>
+                         <blue>104</blue>
+                        </color>
+                       </brush>
+                      </colorrole>
+                      <colorrole role="PlaceholderText">
+                       <brush brushstyle="SolidPattern">
+                        <color alpha="255">
+                         <red>17</red>
+                         <green>62</green>
+                         <blue>104</blue>
+                        </color>
+                       </brush>
+                      </colorrole>
+                     </disabled>
+                    </palette>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <pointsize>13</pointsize>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>Chemical Formula</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QTableWidget" name="tableWidget_Chemical_Formula">
+                   <property name="autoFillBackground">
+                    <bool>false</bool>
+                   </property>
+                   <property name="frameShape">
+                    <enum>QFrame::StyledPanel</enum>
+                   </property>
+                   <property name="autoScrollMargin">
+                    <number>16</number>
+                   </property>
+                   <property name="editTriggers">
+                    <set>QAbstractItemView::NoEditTriggers</set>
+                   </property>
+                   <property name="alternatingRowColors">
+                    <bool>false</bool>
+                   </property>
+                   <property name="selectionBehavior">
+                    <enum>QAbstractItemView::SelectRows</enum>
+                   </property>
+                   <property name="rowCount">
+                    <number>4</number>
+                   </property>
+                   <attribute name="horizontalHeaderVisible">
+                    <bool>true</bool>
+                   </attribute>
+                   <attribute name="horizontalHeaderCascadingSectionResizes">
+                    <bool>false</bool>
+                   </attribute>
+                   <attribute name="horizontalHeaderHighlightSections">
+                    <bool>true</bool>
+                   </attribute>
+                   <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+                    <bool>false</bool>
+                   </attribute>
+                   <attribute name="horizontalHeaderStretchLastSection">
+                    <bool>true</bool>
+                   </attribute>
+                   <attribute name="verticalHeaderVisible">
+                    <bool>true</bool>
+                   </attribute>
+                   <attribute name="verticalHeaderCascadingSectionResizes">
+                    <bool>false</bool>
+                   </attribute>
+                   <attribute name="verticalHeaderStretchLastSection">
+                    <bool>false</bool>
+                   </attribute>
+                   <row/>
+                   <row/>
+                   <row/>
+                   <row/>
+                   <column>
+                    <property name="text">
+                     <string>Formula</string>
+                    </property>
+                   </column>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="frame_8">
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_18">
+                 <item>
+                  <widget class="QLabel" name="label_30">
+                   <property name="font">
+                    <font>
+                     <pointsize>13</pointsize>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>Variables</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QTableWidget" name="tableWidget_Variables">
+                   <property name="editTriggers">
+                    <set>QAbstractItemView::NoEditTriggers</set>
+                   </property>
+                   <property name="selectionBehavior">
+                    <enum>QAbstractItemView::SelectRows</enum>
+                   </property>
+                   <property name="rowCount">
+                    <number>1</number>
+                   </property>
+                   <property name="columnCount">
+                    <number>6</number>
+                   </property>
+                   <attribute name="horizontalHeaderStretchLastSection">
+                    <bool>true</bool>
+                   </attribute>
+                   <row/>
+                   <column>
+                    <property name="text">
+                     <string>New Column</string>
+                    </property>
+                   </column>
+                   <column>
+                    <property name="text">
+                     <string>Energy from (keV)</string>
+                    </property>
+                   </column>
+                   <column>
+                    <property name="text">
+                     <string>Energy skip</string>
+                    </property>
+                   </column>
+                   <column>
+                    <property name="text">
+                     <string>Angle from</string>
+                    </property>
+                   </column>
+                   <column>
+                    <property name="text">
+                     <string>Angle to</string>
+                    </property>
+                   </column>
+                   <column>
+                    <property name="text">
+                     <string>Angle skip</string>
+                    </property>
+                   </column>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="frame_9">
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_17">
+                 <item>
+                  <widget class="QLabel" name="label_31">
+                   <property name="font">
+                    <font>
+                     <pointsize>13</pointsize>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>Results</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QTableWidget" name="tableWidget_Results">
+                   <property name="editTriggers">
+                    <set>QAbstractItemView::NoEditTriggers</set>
+                   </property>
+                   <property name="selectionBehavior">
+                    <enum>QAbstractItemView::SelectRows</enum>
+                   </property>
+                   <property name="rowCount">
+                    <number>10</number>
+                   </property>
+                   <property name="columnCount">
+                    <number>6</number>
+                   </property>
+                   <attribute name="horizontalHeaderStretchLastSection">
+                    <bool>true</bool>
+                   </attribute>
+                   <row/>
+                   <row/>
+                   <row/>
+                   <row/>
+                   <row/>
+                   <row/>
+                   <row/>
+                   <row/>
+                   <row/>
+                   <row/>
+                   <column>
+                    <property name="text">
+                     <string>Energy (keV)</string>
+                    </property>
+                   </column>
+                   <column>
+                    <property name="text">
+                     <string>Angle</string>
+                    </property>
+                   </column>
+                   <column>
+                    <property name="text">
+                     <string>Mom. Tra.</string>
+                    </property>
+                   </column>
+                   <column>
+                    <property name="text">
+                     <string>KN</string>
+                    </property>
+                   </column>
+                   <column>
+                    <property name="text">
+                     <string>Th</string>
+                    </property>
+                   </column>
+                   <column>
+                    <property name="text">
+                     <string>TMMDSC</string>
+                    </property>
+                   </column>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="frame_10">
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_7">
+                 <item>
+                  <widget class="QPushButton" name="BtnCalculate">
+                   <property name="text">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="BtnDownload">
+                   <property name="font">
+                    <font>
+                     <family>Segoe UI</family>
+                     <pointsize>14</pointsize>
+                     <weight>75</weight>
+                     <italic>false</italic>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="cursor">
+                    <cursorShape>PointingHandCursor</cursorShape>
+                   </property>
+                   <property name="text">
+                    <string>Export Results in Excel Format</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="page_about"/>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item alignment="Qt::AlignBottom">
+        <widget class="QFrame" name="footer">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item alignment="Qt::AlignBottom">
+           <widget class="QFrame" name="footerdesc">
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_3">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item alignment="Qt::AlignBottom">
+              <widget class="QLabel" name="label_2">
+               <property name="text">
+                <string>M. Büyükyıldız, L. Aydinbakar, &quot;New software for calculating the differential scattering parameters for applications: DSPCal&quot;</string>
+               </property>
+               <property name="textFormat">
+                <enum>Qt::AutoText</enum>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item alignment="Qt::AlignRight|Qt::AlignBottom">
+           <widget class="QFrame" name="size_grip">
+            <property name="minimumSize">
+             <size>
+              <width>15</width>
+              <height>15</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>15</width>
+              <height>15</height>
+             </size>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_4">
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item alignment="Qt::AlignRight|Qt::AlignBottom">
+              <widget class="QLabel" name="label">
+               <property name="text">
+                <string/>
+               </property>
+               <property name="pixmap">
+                <pixmap resource="icons.qrc">:/icons/guidata/cil-size-grip.png</pixmap>
+               </property>
+               <property name="scaledContents">
+                <bool>false</bool>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="icons.qrc"/>
+  <include location="icons.qrc"/>
+  <include location="../../../work/14.btuMehmetBuyukyildiz/DSPCal/icons.qrc"/>
+ </resources>
+ <connections/>
+</ui>
